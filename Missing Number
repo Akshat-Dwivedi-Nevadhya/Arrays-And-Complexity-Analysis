@@ -1,0 +1,12 @@
+public class MissingNumber {
+    public static void main(String[] args) {
+        int [] arr = {1,2,4,7,6,5};
+       long n = arr.length+1;
+        long sum = n*(n+1)/2;
+        int sumArr = 0;
+        for(int i : arr){
+            sumArr += i;
+        }
+        System.out.println("The missing number is: " + (sum-sumArr));
+    }
+}
